@@ -1,0 +1,16 @@
+{
+  "name": "exchangekv1",
+  "version": "0.1.0",
+  "scripts": {
+    "codegen:mainnet": "graph codegen subgraph_mainnet.yaml",
+    "build:mainnet": "graph build subgraph_mainnet.yaml",
+    "deploy:mainnet": "graph deploy shibaswaparmy/exchange --ipfs https://graphipfs.shibinternal.com --node https://graph.shibinternal.com:8020 subgraph_mainnet.yaml",
+    "codegen:puppynet": "graph codegen subgraph_puppynet.yaml",
+    "build:puppynet": "graph build subgraph_puppynet.yaml",
+    "deploy:puppynet": "graph deploy shibaswaparmy/exchange --ipfs https://graphipfs.shibinternal.com --node https://graph.shibinternal.com:8020 subgraph_puppynet.yaml"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.60.0",
+    "@graphprotocol/graph-ts": "0.29.3"
+  }
+}
